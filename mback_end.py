@@ -58,6 +58,9 @@ def scrape_data(data):
         name.append(str(date))
         name = "-".join(name)
         page = requests.get(url + name)
+        while page.status_code == 200 or page.status_code == 404:
+            # print('aaa')
+            break
         if page.status_code == 200:
             html = BeautifulSoup(page.content, 'lxml')
             rating = html.find_all("span", itemprop='ratingValue')
