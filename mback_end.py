@@ -58,14 +58,12 @@ def scrape_data(data):
         name.append(str(date))
         name = "-".join(name)
         page = requests.get(url + name)
-        while page.status_code == 200 or page.status_code == 404:
-            # print('aaa')
-            break
         if page.status_code == 200:
             html = BeautifulSoup(page.content, 'lxml')
             rating = html.find_all("span", itemprop='ratingValue')
             imdb_rating.append(rating[0].text)
             link = html.find_all('img', attrs={'class': 'img-responsive'})
+            print(link)
             link = link[0]['src']
             thumbnail_link.append(link)
             download_link.append(url+name)
