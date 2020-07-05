@@ -1,0 +1,134 @@
+body,html
+{
+    width: 100%;
+    height: 100%;
+    background: url(images/background.jpg)
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+
+.form
+{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#search-box
+{
+    width: 300px;
+    height: 30px;
+    font-family: "Cookie";
+    font-size: 25px;
+    padding-left:20px;
+}
+
+#search-button
+{
+    height: 35px;
+    background-color: orangered;
+    font-family: "Anton";
+    
+}
+
+#search-box, #search-button
+{
+    border-radius: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+#loading-gif
+{
+    width: 60px;
+    margin: 0px;
+    align-self: center;
+    position: relative;
+    right: -130px;
+    opacity: 0;
+
+}
+
+#wrong-name
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -30px;
+    font-family: "Cookie";
+    font-size: 20px;
+    opacity: 0;
+    color: red;
+    margin: 0px;
+    padding: 0px;
+}
+
+#archive
+{
+    font-family: "Cookie";
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+    color: red;
+    opacity: 0;
+    margin : 0px;
+    padding: 0px;
+}
+
+.movie-data
+{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    position: relative;
+    top: -150px;
+
+}
+
+table
+{
+    border: 5px solid blue;
+    border-radius: 3px;
+    width: 70%;
+    margin: 0px;
+}
+
+
+td>img
+{
+    width: 65px;
+    height: 80px;
+    border: 4px solid red;
+}
+
+table
+{
+    font-family: "Doppio One";
+
+}
+
+td>a
+{
+    font-size: 20px;
+}
+
+td
+{
+    background-color: rgba(252, 255, 254, 0.4);
+    border: black solid 2px;
+    padding-left: 6%;
+}
+
+th
+{
+    font-size: 20px;
+    height: 50px;
+    background-color: rgba(250, 17, 0, 0.7)
+}
